@@ -944,7 +944,7 @@ margin-bottom: 4px;
 
 .form-checkbox {
   display: flex;
-  align-content: center;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 30px; 
   padding-left: 52px;
@@ -980,16 +980,19 @@ margin-bottom: 4px;
 -webkit-appearance: none;
 -moz-appearance: none;
  appearance: none;
+ position: absolute;
 }
 
 .checkbox:checked + .icon {
   background-color: var(--accent-color);
+  border-color: var(--accent-color);
   fill: var(--primary-bg-color);
   background-image: url('../image/iconcheck.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border-color: transparent;
+  background-origin: border-box;
+  /* border-color: transparent; */
   display: inline-block;
  }
 
@@ -1043,25 +1046,24 @@ color: rgba(117, 117, 117, 0.5);
   
 }
 
-/* .form-group:focus-within > .icon-modal {
-  fill: var(--accent-color);
- 
-} */
 
 .form-input:focus ~ .icon-modal,
 .form-input:hover ~ .icon-modal {
    fill: var(--accent-color);
+   transition: transform var(--transition-time);
 }
 
 .form-input:focus, 
 .form-input:hover {
   border-color: var(--accent-color);
   padding-left: 42px;
+  transition: transform var(--transition-time);
 }
 
 .icon-close:focus, 
 .icon-close:hover {
   fill: var(--accent-color);
+  transition: background-color var(--transition-time);
 }
 
 /* Styles Portfolio */
