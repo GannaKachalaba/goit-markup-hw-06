@@ -738,13 +738,13 @@ body {
 }
 
 .footer-contact-title {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--primary-bg-color);
 }
 
@@ -758,7 +758,7 @@ text-transform: uppercase;
   background-color: var(--accent-color);
   border-radius: 4px;
   border-color: transparent;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -771,11 +771,10 @@ text-transform: uppercase;
 }
 
 .footer-contact {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-form-contact {
@@ -784,12 +783,14 @@ text-transform: uppercase;
 }
 
 .contact-form {
-   align-items: baseline;
-    flex-direction: column;
-  
+  align-items: baseline;
+  flex-direction: column;
 }
 
 .footer-input {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -798,16 +799,9 @@ text-transform: uppercase;
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  background: #2F303A;
+  background: #2f303a;
 }
 
-.footer-contact-mail {
-  width: 358px;
-  height: 50px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-}
 
 .backdrop {
   position: fixed;
@@ -856,12 +850,12 @@ text-transform: uppercase;
   justify-content: center;
   width: 18px;
   height: 18px;
- }
+}
 
- .icon-modal {
+.icon-modal {
   width: 18px;
   height: 18px;
- }
+}
 
 .is-hidden {
   opacity: 0;
@@ -873,27 +867,28 @@ text-transform: uppercase;
   display: block;
   width: 528px;
   background: var(--primary-bg-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   /* margin-left: 40px;
   margin-right: 40px; */
 }
 
 .form-title {
-display: flex;
-align-content: center;
-padding-top: 40px;
-padding-right: 39px;
-padding-left: 41px;
-margin-bottom: 30px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 1.15;
-text-align: center;
-letter-spacing: 0.03em;
-color: #212121;
+  display: flex;
+  align-content: center;
+  padding-top: 40px;
+  padding-right: 39px;
+  padding-left: 41px;
+  margin-bottom: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 
 .form-group {
@@ -903,7 +898,10 @@ color: #212121;
   padding-right: 40px;
   margin-bottom: 10px;
   position: relative;
-  
+}
+
+.form-label {
+  margin-bottom: 4px;
 }
 
 .form-group input {
@@ -915,7 +913,7 @@ color: #212121;
   border-radius: 4px;
   cursor: pointer;
 }
- 
+
 .form-group input[type="checkbox"] {
   width: 16px;
   height: 15px;
@@ -924,10 +922,13 @@ color: #212121;
 
 .form-label {
   /* position: absolute; */
-margin-bottom: 4px;
-
+  margin-bottom: 4px;
 }
-   
+
+.form-comment {
+  margin-bottom: 4px;
+}
+
 .icon-modal {
   position: absolute;
   top: 50%;
@@ -935,18 +936,17 @@ margin-bottom: 4px;
   margin-left: 12px;
   transform: translate(-50%);
   transition: transform var(--transition-time);
-} 
+}
 
 .input-checkbox {
   border-color: #212121;
 }
- 
 
 .form-checkbox {
   display: flex;
   align-items: center;
   margin-top: 20px;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
   padding-left: 52px;
   padding-right: 51px;
 }
@@ -955,7 +955,7 @@ margin-bottom: 4px;
   display: inline-block;
   align-items: center;
   margin-left: 7px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -977,25 +977,24 @@ margin-bottom: 4px;
 }
 
 .checkbox {
--webkit-appearance: none;
--moz-appearance: none;
- appearance: none;
- position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
 }
 
 .checkbox:checked + .icon {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   fill: var(--primary-bg-color);
-  background-image: url('../image/iconcheck.svg');
+  background-image: url("../image/iconcheck.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   background-origin: border-box;
   /* border-color: transparent; */
   display: inline-block;
- }
-
+}
 
 .submit-btn {
   display: flex;
@@ -1003,7 +1002,7 @@ margin-bottom: 4px;
   justify-content: center;
   min-width: 200px;
   height: 50px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1011,7 +1010,7 @@ margin-bottom: 4px;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--primary-bg-color);
-  background: #188CE8;
+  background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
@@ -1026,13 +1025,13 @@ margin-bottom: 4px;
 }
 
 .textarea::placeholder {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 1.16;
-letter-spacing: 0.01em;
-color: rgba(117, 117, 117, 0.5);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .textarea {
@@ -1043,24 +1042,22 @@ color: rgba(117, 117, 117, 0.5);
   box-sizing: border-box;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  
 }
-
 
 .form-input:focus ~ .icon-modal,
 .form-input:hover ~ .icon-modal {
-   fill: var(--accent-color);
-   transition: transform var(--transition-time);
+  fill: var(--accent-color);
+  transition: transform var(--transition-time);
 }
 
-.form-input:focus, 
+.form-input:focus,
 .form-input:hover {
   border-color: var(--accent-color);
   padding-left: 42px;
   transition: transform var(--transition-time);
 }
 
-.icon-close:focus, 
+.icon-close:focus,
 .icon-close:hover {
   fill: var(--accent-color);
   transition: background-color var(--transition-time);
